@@ -23,11 +23,12 @@ cv2.destroyAllWindows()
 #%%
 
 # Ruta de la carpeta con las imágenes
-# input_folder = "D:\Esteban VC\Poli JIC\Semillero Vision Artificial\VisionArtificial\Prueba\Crudas\Buenas"
-input_folder = "D:\Esteban VC\Poli JIC\Semillero Vision Artificial\VisionArtificial\Prueba\Crudas\Buenas"
+# input_folder = "D:\Esteban VC\Poli JIC\Semillero Vision Artificial\Vision Artificial\Prueba\Crudas\Malas"
+input_folder = "D:\Esteban VC\Poli JIC\Semillero Vision Artificial\Vision Artificial\Prueba\Crudas\Buenas"
 
 # Ruta de la carpeta donde se guardarán las imágenes procesadas
-output_folder = "D:\Esteban VC\Poli JIC\Semillero Vision Artificial\VisionArtificial\Prueba\Recortadas\Buenas"
+# output_folder = "D:\Esteban VC\Poli JIC\Semillero Vision Artificial\Vision Artificial\Prueba\Recortadas\Malas"
+output_folder = "D:\Esteban VC\Poli JIC\Semillero Vision Artificial\Vision Artificial\Prueba\Recortadas\Buenas"
 
 for filename in os.listdir(input_folder):
     # Si el archivo no es una imagen, lo saltamos
@@ -39,7 +40,7 @@ for filename in os.listdir(input_folder):
     # img = cv2.imread('D:\Esteban VC\Poli JIC\Semillero Vision Artificial\VisionArtificial\Malas\Mala.jpg')
     # img = cv2.imread('D:\Esteban VC\Poli JIC\Semillero Vision Artificial\VisionArtificial\Buenas\Buena.jpg')
     # img = cv2.imread('D:\Esteban VC\Poli JIC\Semillero Vision Artificial\VisionArtificial\F4.jpeg')
-    # img = cv2.resize(img,(680,500))
+    # img = cv2.resize(img,(480,360))
     # convertir la imagen a escala de grises
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     

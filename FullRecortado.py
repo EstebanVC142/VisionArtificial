@@ -10,10 +10,11 @@ import numpy as np
 
 cv2.destroyAllWindows()
 # leer la imagen
-img = cv2.imread('D:\Esteban VC\Poli JIC\Semillero Vision Artificial\VisionArtificial\Prueba\Crudas\Malas\Mala.jpg')
-# img = cv2.imread('D:\Esteban VC\Poli JIC\Semillero Vision Artificial\VisionArtificial\Prueba\Crudas\Buenas\Buena.jpg')
-# img = cv2.imread('D:\Esteban VC\Poli JIC\Semillero Vision Artificial\VisionArtificial\F4.jpeg')
-img = cv2.resize(img,(680,500))
+# img = cv2.imread('D:\Esteban VC\Poli JIC\Semillero Vision Artificial\Vision Artificial\Prueba\Crudas\Malas\Mala.jpg')
+# img = cv2.imread('D:\Esteban VC\Poli JIC\Semillero Vision Artificial\Vision Artificial\Prueba\Crudas\Buenas\Buena.jpg')
+img = cv2.imread('D:\Esteban VC\Poli JIC\Semillero Vision Artificial\Vision Artificial\F4.jpeg')
+# img = cv2.imread('D:\Esteban VC\Poli JIC\Semillero Vision Artificial\VisionArtificial\EERT.jpeg')
+img = cv2.resize(img,(840, 600))
 
 # convertir la imagen a escala de grises
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)

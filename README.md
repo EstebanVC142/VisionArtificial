@@ -1,2 +1,0 @@
-# VisionArtificial
-Etiquetas con chip
